@@ -130,11 +130,14 @@
     <ClCompile Include="AnimalDog.cpp" />
     <ClCompile Include="AnimalDuck.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PositionAnimalFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimalDog.h" />
     <ClInclude Include="AnimalDuck.h" />
-    <ClInclude Include="AnimalFactory.h" />
+    <ClInclude Include="Animal.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="PositionAnimalFactory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

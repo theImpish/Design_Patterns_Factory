@@ -15,4 +15,4 @@ int AnimalDuck::getXVelocity() { return xVelocity; }
 int AnimalDuck::getYVelocity() { return yVelocity; }
 
 void AnimalDuck::fly() { std::cout << "look I'm flying!!!!!!!!!!!!!!!!!!!!!!!!!!!\n (ʘ‿ʘ)╯ \n"; };
-void AnimalDuck::speak() { std::cout << "I'm a duck therefore I quack\n\nQUACK\tQUACK\n\n"; };
+void AnimalDuck::speak() { std::cout << "I'm a duck therefore I quack\nQUACK\tQUACK\n\n"; };

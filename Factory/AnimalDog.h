@@ -1,6 +1,6 @@
 #pragma once
 
-#include "AnimalFactory.h"
+#include "Animal.h"
 
 class AnimalDog : Animal
 {
