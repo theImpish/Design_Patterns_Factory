@@ -1,8 +1,13 @@
 #include <iostream>
+#include "AnimalDog.h"
+#include "AnimalDuck.h"
 
 int main()
 {
-	std::cout << "Factory Method\n";
+	AnimalDog* boby = new AnimalDog();
+
+	boby->run();
+	boby->speak();
 
 	std::cin.get();
 }
