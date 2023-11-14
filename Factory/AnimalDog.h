@@ -2,7 +2,7 @@
 
 #include "Animal.h"
 
-class AnimalDog : Animal
+class AnimalDog : public Animal
 {
 private:
 	int xPos;

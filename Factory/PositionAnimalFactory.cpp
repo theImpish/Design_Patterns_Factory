@@ -9,11 +9,10 @@ PositionAnimalFactory::PositionAnimalFactory(int x, int y)
 
 Animal* PositionAnimalFactory::createAnimal(const std::string animalType)
 {
-	Animal* animal = nullptr;
+
 	if (animalType == "Dog")
 	{
-		AnimalDog* dog = nullptr;
-		animal = new AnimalDog();
+		Animal* dog = new AnimalDog();
 	}
 	return nullptr;
 }

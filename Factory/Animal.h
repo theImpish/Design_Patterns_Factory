@@ -3,6 +3,7 @@
 class Animal
 {
 public:
+	Animal();
 	virtual void setX(int x) = 0;
 	virtual void setY(int y) = 0;
 	virtual void setXVelocity(int vx) = 0;
