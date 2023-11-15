@@ -8,6 +8,8 @@ int main()
 
 	boby->run();
 	boby->speak();
+	boby->setLocomotionType("running");
+	boby->locomotion();
 
 	std::cin.get();
 }

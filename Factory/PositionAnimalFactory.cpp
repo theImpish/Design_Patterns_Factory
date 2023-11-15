@@ -12,8 +12,14 @@ Animal* PositionAnimalFactory::createAnimal(const std::string animalType)
 
 	if (animalType == "Dog")
 	{
-		Animal* dog = new AnimalDog();
+		animal = new AnimalDog();
+		this->setPosition();
 	}
-	return nullptr;
+	return animal;
 }
 
+void PositionAnimalFactory::setPosition()
+{
+	this->animal->setX(xPos);
+	this->animal->setY(yPos);
+}

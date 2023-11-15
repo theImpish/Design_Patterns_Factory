@@ -1,5 +1,6 @@
 ﻿#include "AnimalDog.h"
 #include <iostream>
+#include <string>
 
 void AnimalDog::setX(int x) { xPos = x; };
 void AnimalDog::setY(int y) { yPos = y; };
