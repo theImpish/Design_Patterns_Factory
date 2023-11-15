@@ -21,8 +21,6 @@ public:
 	int getXVelocity();
 	int getYVelocity();
 
-	void setLocomotionType();
-
 	void fly();
 	void speak();
 };

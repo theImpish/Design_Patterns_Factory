@@ -4,17 +4,19 @@
 
 #include <string>
 
-class PositionAnimalFactory : Factory
+class PositionAnimalFactory : public Factory
 {
-public:
-	PositionAnimalFactory(int x, int y);
-	Animal* createAnimal(const std::string animalType);
-private:
-	void setPosition();
-
 private:
 	int xPos;
 	int yPos;
-	Animal* animal;
+
+public:
+	PositionAnimalFactory(int x, int y);
+
+	Animal* createAnimal(std::string animalType);
+	//Animal* createAnimal();
+private:
+	void setPosition(Animal& animal);
+
 
 };

@@ -7,19 +7,26 @@ PositionAnimalFactory::PositionAnimalFactory(int x, int y)
 	yPos = y;
 }
 
-Animal* PositionAnimalFactory::createAnimal(const std::string animalType)
+Animal* PositionAnimalFactory::createAnimal(std::string animalType) 
 {
+	Animal* animal = nullptr;
 
 	if (animalType == "Dog")
 	{
 		animal = new AnimalDog();
-		this->setPosition();
+		this->setPosition(*animal);
+	}
+	if (animalType == "Duck")
+	{
+		animal = new AnimalDuck();
+		this->setPosition(*animal);
 	}
 	return animal;
 }
 
-void PositionAnimalFactory::setPosition()
+void PositionAnimalFactory::setPosition(Animal& animal)
 {
-	this->animal->setX(xPos);
-	this->animal->setY(yPos);
+	animal.setX(xPos);
+	animal.setY(yPos);
 }
+
