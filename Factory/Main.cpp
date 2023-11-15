@@ -16,7 +16,6 @@ int main()
 
 	Animal* boby = new AnimalDog();
 
-	//boby->run();
 	boby->speak();
 	boby->setLocomotionType("running");
 	boby->locomotion();
